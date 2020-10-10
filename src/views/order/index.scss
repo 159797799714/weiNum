@@ -1,0 +1,199 @@
+@import '@/common/mixin.scss';
+.content{
+  .filter{
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    left: 0;
+    margin-bottom: .3rem;
+    padding: 0 .3rem;
+    border-bottom: .02rem solid rgba($color: #fff, $alpha: 0.48);
+    .filt-item{
+      position: relative;
+      box-sizing: border-box;
+      padding-left: .48rem;
+      color: $color-cc;
+      font-size: .28rem;
+      line-height: .8rem;
+      transition: 300ms;
+      .xiaIcon{
+        margin-right: .32rem;
+        line-height: .8rem;
+        transition: 300ms;
+      }
+      &:after{
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-0.2rem);
+        content: '';
+        height: .4rem;
+        width: .02rem;
+        background: rgba($color: #fff, $alpha: 0.48);
+      }
+      &:last-of-type{
+        &:after{
+          display: none;
+        }
+      }
+    }
+    .selected{
+      color: $color-blue!important;
+      transform: rotate(180deg);
+    }
+  }
+  // 筛选下拉框
+  .radius-b16{
+    border-radius: 0 0 0.16rem 0.16rem;
+  }
+  .filter-cover{
+    z-index: 100;
+    position: fixed;
+    top: .8rem;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 1.78rem);
+    background: rgba(0, 0, 0, 0.6);
+    .cover-box{
+      transition: 200ms;
+    }
+    .search{
+      padding: .19rem .3rem;
+      width: 100%;
+      box-sizing: border-box;
+      border-bottom: .02rem solid rgba($color: #fff, $alpha: 0.2);
+      .search-box{
+        border-radius: .35rem;
+        .ipt, .iconfont{
+          line-height: .64rem;
+        }
+        .ipt{
+          background: $color-29;
+        }
+        .souIcon{
+          padding: 0 0.3rem 0 .26rem;
+        }
+        .delIcon{
+          padding: 0 0.3rem 0 0.3rem;
+        }
+      }
+    }
+    .filter-list{
+      box-sizing: border-box;
+      max-height: 6.88rem;
+      overflow-y: auto;
+      padding: 0.1rem .4rem;
+      .filter-item{
+        height: .48rem;
+        padding: 0.3rem;
+        line-height: .48rem;
+        border-bottom: 0.02rem solid rgba($color: #fff, $alpha: 0.2);
+        overflow: hidden;
+        .filter-left{
+          padding-right: .6rem;
+          .smallappImg, .douImg{
+            display: inline-block;
+            vertical-align: top;
+            height: .48rem;
+            width: .48rem;
+            margin-right: .4rem;
+          }
+          .douImg{
+            border-radius: 50%;
+          }
+        }
+        &:last-of-type{
+          border: 0;
+        }
+      }
+    }
+    .blank{
+      height: 6.88rem;
+      padding-top: 1.31rem;
+      line-height: .37rem;
+      box-sizing: border-box;
+    }
+  }
+  .grade{
+    width: 6.3rem;
+    padding: 0 .3rem .3rem .3rem;
+    margin: 0 auto;
+    .grade-item{
+      .grade-name{
+        padding: .3rem 0 .24rem;
+        line-height: .36rem;
+      }
+      .money{
+        .num{
+          line-height: .39rem;
+          margin-bottom: .09rem;
+        }
+        .title{
+          line-height: .32rem;
+        }
+      }
+      .border-left{
+        position: relative;
+        &:after{
+          display: block;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          content: '';
+          height: .8rem;
+          width: .02rem;
+          background: #666;
+        }
+      }
+    }
+  }
+  .detail-title{
+    padding: 0.48rem .3rem .2rem;
+  }
+  .detailList{
+    width: 6.9rem;
+    margin: 0 auto;
+    .detail-item{
+      padding: 0 .3rem .3rem;
+      margin-bottom: .3rem;
+      .item-head{
+        line-height: .6rem;
+        border-bottom: 0.02rem solid rgba($color: #000, $alpha: 0.2);
+      }
+      .item-info{
+        padding-top: .3rem;
+        .detail-img{
+          margin-right: .16rem;
+          height: .88rem;
+          width: .88rem;
+        }
+        .title-box{
+          height: .36rem;
+          .item-title{
+            line-height: .36rem;
+          }
+          .item-time{
+            margin-left: .16rem;
+            text-align: center;
+            color: #AF7474;
+            height: .32rem;
+            min-width: 1.34rem;
+            padding: 0 .1rem;
+            line-height: .32rem;
+            border-radius: 0.16rem;
+            background: #F9EDD1;
+            white-space: nowrap;
+          }
+        }
+        .people-num,.get-money{
+          margin-top: .14rem;
+          width: 50%;
+          vertical-align: top;
+          line-height: .34rem;
+        }
+        
+      }
+    }
+  }
+}

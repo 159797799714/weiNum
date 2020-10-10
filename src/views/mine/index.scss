@@ -1,0 +1,248 @@
+@import '@/common/mixin.scss';
+.content{
+  padding: 0 .3rem;
+  min-height: 100%;
+  .header{
+    padding: .42rem 0 .48rem;
+    .head-left{
+      height: 1.16rem;
+      .head-img{
+        height: 1.16rem;
+        width: 1.16rem;
+        margin-right: .2rem;
+        border-radius: 50%;
+      }
+      .user-info {
+        max-width: 3.77rem;
+        .name{
+          line-height: .48rem;
+          margin-bottom: .05rem;
+        }
+        .info{
+          line-height: .33rem;
+        }
+      }
+    }
+    .head-right{
+      margin: .18rem -0.3rem 0 0;
+      padding: 0 .24rem;
+      line-height: .54rem;
+      background-color: #1F2E45;
+      opacity: 0.6;
+      border-radius: .27rem 0 0 .27rem;
+      overflow: hidden;
+      .iconbianji{
+        margin-right: .06rem;
+      }
+    }
+  }
+  .grade-menu{
+    margin-bottom: .48rem;
+    .menu-item{
+      border-right: 0.01rem solid #333333;
+      .money{
+        line-height: .4rem;
+        margin-bottom: .13rem;
+      }
+      .name{
+        line-height: .32rem;
+      }
+      &:last-of-type{
+        border: 0;
+      }
+    }
+  }
+  .line-36{line-height: .36rem;}
+  .balance{
+    padding: .24rem .3rem 0;
+    .balance-num{
+      line-height: .86rem;
+    }
+    .supplyBtn{
+      margin-top: .06rem;
+      height: .62rem;
+      width: 1.86rem;
+      line-height: .62rem;
+      background: linear-gradient(104deg,rgb(255,102,102), rgb(255,47,15));
+      border-radius: .36rem;
+    }
+    .aroundGrade{
+      padding: .12rem 0;
+      line-height: .36rem;
+      opacity: 0.8;
+      border-top: 0.01rem solid #D7D7D7;
+    }
+  }
+
+  .nav-menu{
+    .nav-item{
+      padding-top: .44rem;
+      width: 1.2rem;
+      margin-right: .70rem;
+      .nav-icon{
+        margin-bottom: .14rem;
+        height: .72rem;
+        width: .72rem;
+      }
+      &:nth-of-type(4n) {
+        margin-right: 0;
+      }
+    }
+  }
+  .foot{
+    position: fixed;
+    bottom: 1.12rem;
+    left: 0;
+    width: 100%;
+    .foot-btn{
+      width: 4.08rem;
+      height: .88rem;
+      border-radius: .44rem;
+      line-height: .88rem;
+      background: linear-gradient(104deg, rgb(252, 226, 180), rgb(226, 164,90));
+    }
+  }
+
+  // 收款,账户信息弹窗
+  .receive-main{
+    width: 6.4rem;
+    box-sizing: border-box;
+    padding: .24rem .3rem .12rem;
+    .title{
+      margin-bottom: .2rem;
+      padding-bottom: .24rem;
+      line-height: .36rem;
+      border-bottom: .02rem solid #D6D6D6;
+    }
+    .receive-title{
+      line-height: .34rem;
+      margin-bottom: .06rem;
+      color: $color-10;
+      opacity: 0.6;
+    }
+    .ipt-box{
+      height: .72rem;
+      width: 100%;
+      border-radius: .08rem;
+      .ipt{
+        height: 100%;
+        width: 100%;
+        padding: 0 .24rem;
+        box-sizing: border-box;
+        line-height: .72rem;
+        background: #F3F6FC;
+        border-radius: .08rem;
+        color: $color-10;
+      }
+    }
+    .errorWord{
+      height: .32rem;
+      color: #FF3737;
+      line-height: .32rem;
+    }
+    .error-box{
+      background: #FFF7F7!important;
+      border: 0.02rem solid #FF7D7D!important;
+    }
+  }
+
+  // 提现
+  .apply-info{
+    margin: .1rem 0 .35rem;
+    padding: .2rem .2rem .11rem .38rem;
+    border-radius: .1rem;
+    background: #F1F1F1;
+    color: #AFB1B5;
+    line-height: .32rem;
+    .info-item{
+      position: relative;
+      margin-bottom: 0.09rem;
+      &::before{
+        content: '';
+        position: absolute;
+        left: -0.2rem;
+        top: 0.08rem;
+        display: block;
+        height: .08rem;
+        width: .08rem;
+        background: #AFB1B5;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+    }
+  }
+  .applyList{
+    .apply-item{
+      .money{
+        margin-bottom: .12rem;
+        line-height: .4rem;
+      }
+      .name{
+        margin-bottom: .4rem;
+        line-height: .32rem;
+        opacity: 0.8;
+      }
+    }
+  }
+  .sureBtn{
+    margin: 0 auto .28rem;
+    height: .8rem;
+    width: 5.2rem;
+    border-radius: .1rem;
+    line-height: .8rem;
+    background: $color-blue;
+  }
+
+  // 提现失败
+  .failBox{
+    padding-bottom: .28rem;
+    .failIcon{
+      padding: .11rem 0 .17rem;
+      height: 1.01rem;
+      width: 1.01rem;
+      font-size: 1.01rem;
+      background: linear-gradient(to right, #F2F2F2, #CACACA);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    .shadow{
+      height: .12rem;
+      width: .82rem;
+      margin: 0 auto .32rem;
+      background: #F0F0F0;
+      border-radius: 100%;
+    }
+    .word{
+      line-height: .38rem;
+    }  
+  }
+
+   // 商务合作弹窗
+  .group-main{
+    width: 6.4rem;
+    padding-bottom: .47rem;
+    .group-banner{
+      width: 6.4rem;
+      height: 1.92rem;
+    }
+    .title{
+      box-sizing: border-box;
+      width: 5.8rem;
+      padding: .24rem .1rem;
+      margin: 0 auto;
+      line-height: .36rem;
+      border-bottom: .02rem solid #D6D6D6;
+    }
+    .group-code{
+      height: 4.08rem;
+      width: 4.08rem;
+      margin: .54rem auto .46rem;
+    }
+    .hand-icon{
+      height: 1.28rem;
+      width: 1.28rem;
+      margin: .22rem auto 0;
+    }
+  }
+  
+}

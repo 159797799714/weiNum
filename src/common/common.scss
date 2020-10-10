@@ -1,0 +1,102 @@
+@import './mixin.scss';
+
+/*  浮动 */
+.f-left{float: left;}
+.f-right{float: right;}
+
+.p-re{position: relative;}
+.p-ab{position: absolute;}
+.p-fix{position: fixed;}
+.p-30{padding: 0.2rem 0.3rem;}
+.p-b30{padding-bottom: 0.3rem;}
+.p-r30{padding-right: 0.3rem;}
+.p-l30{padding-left: 0.3rem;}
+
+
+.dis-inline-block{display: inline-block;}
+.dis-block{display: block;}
+.dis-flex{display: flex;}
+.flex-1{flex: 1;}
+.flex-column{flex-direction: column;}
+.flex-x-center{justify-content: center;}
+.flex-x-between{justify-content: space-between;}
+.flex-x-end{justify-content: flex-end;}
+.flex-x-around{justify-content: space-around;}
+.flex-y-center{align-items: center;}
+.flex-y-end{align-items: flex-end;}
+.flex-wrap{flex-wrap: wrap;}
+
+
+/* // 文字大小 */
+.f-16{font-size: 0.16rem!important;}
+.f-18{font-size: 0.18rem!important;}
+.f-20{font-size: 0.2rem!important;}
+.f-22{font-size: 0.22rem!important;}
+.f-24{font-size: 0.24rem!important;}
+.f-26{font-size: 0.26rem!important;}
+.f-28{font-size: 0.28rem!important;} 
+.f-30{font-size: 0.3rem!important;} 
+.f-32{font-size: 0.32rem!important;} 
+.f-34{font-size: 0.34rem!important;} 
+.f-36{font-size: 0.36rem!important;}
+.f-36{font-size: 0.36rem!important;}
+.f-44{font-size: 0.44rem!important;}
+.f-46{font-size: 0.46rem!important;}
+.f-56{font-size: 0.56rem!important;}
+.f-bold{font-weight: bold;}
+.f-400{font-weight: 400;}
+
+.line-1{line-height: 1;}
+
+.over-hidden{overflow: hidden;}
+
+/* // 文字对齐方式 */
+.t-left{text-align: left;}
+.t-center{text-align: center;}
+.t-right{text-align: right;}
+.v-center{vertical-align: middle;}
+.v-top{vertical-align: top;}
+.v-b{vertical-align: bottom;}
+.text-line{text-decoration: line-through;}
+
+/* // 文字超出隐藏 */
+.nowrap{white-space: nowrap;}
+.oneline-hidden{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.twoline-hidden{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.threeline-hidden{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+.col-ff{color: $color-ff!important;}
+.col-14{color: $color-blue!important;}
+.col-EE{color: $color-EE!important;}
+.col-99{color: $color-99!important;}  // #fff的透明度60%
+.col-cc{color:$color-cc!important;}  // #fff的透明度80%
+.col-82{color: #82571D!important;}
+.col-yellow{color: #FFEB34;}
+.col-red{color: $color-red;}
+.col-10{color: #101E39!important;}
+
+
+.bg-ff{background-color: $color-ff!important;}
+.bg-10{background-color: $color-10!important;}
+.bg-29{background-color: $color-29!important;}
+
+.radius-16{border-radius: .16rem;}
+
+.opacity-6{opacity: 0.6;}
+.opacity-8{opacity: 0.8;}

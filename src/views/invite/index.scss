@@ -1,0 +1,58 @@
+@import '@/common/mixin.scss';
+.content {
+  width: 100%;
+  .headImg{
+    height: 3.3rem;
+    width: 100%;
+  }
+  .poster{
+    width: 6.9rem;
+    margin: 0 auto;
+    background: $color-EA;
+    .poster-head{
+      padding: .4rem .4rem .24rem .4rem;
+      border-radius: .16rem .16rem 0 0;
+      .head-img{
+        height: .88rem;
+        width: .88rem;
+        margin-right: .16rem;
+        border-radius: 50%;
+      }
+      .name{
+        line-height: .42rem;
+      }
+      .word{
+        line-height: .33rem;
+      }
+    }
+    .poster-img{
+      position: relative;
+      height: 8.72rem;
+      width: 6.9rem;
+      margin-bottom: .47rem;
+      .qrcode{
+        position: absolute;
+        bottom: .50rem;
+        left: .61rem;
+        height: 1.44rem;
+        width: 1.44rem;
+        border-radius: .08rem;
+        background: #c2c2c2;
+      }
+    }
+  }
+  .footBox{
+    position: fixed;
+    bottom: .2rem;
+    left: 0;
+    width: 100%;
+    .btn{
+      margin: 0 auto;
+      width: 4.28rem;
+      height: .88rem;
+      border-radius: .44rem;
+      line-height: .88rem;
+      background: linear-gradient(104deg,rgb(82, 173,255),rgb(130,48,244));
+    }
+  }
+}

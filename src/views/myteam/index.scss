@@ -1,0 +1,133 @@
+@import '@/common/mixin.scss';
+.content{
+  margin-top: 0;
+  .teamGrade{
+    padding: .3rem .1rem;
+    margin: .3rem 0;
+    background: rgba(41,55,87,0.4);
+    .grade-left,.grade-right,.grade-item{
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+    }
+    .grade-left:after{
+      position: absolute;
+      top: 0;
+      right: 0;
+      content: '';
+      height: .79rem;
+      width: 0.01rem;
+      background: rgba(255, 255, 255, 0.2);
+    }
+    .grade-item{
+      text-align: center;
+      .num{
+        margin-bottom: .06rem;
+        line-height: .4rem;
+      }
+      .gradeName{
+        white-space: nowrap;
+        line-height: .32rem;
+      }
+    }
+    .item-one{
+      width: 1.4rem;
+    }
+  }
+  .tabs{
+    .tab-item{
+      color: $color-99;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: .1rem;
+      width: 2.12rem;
+      text-align: center;
+      font-size: .28rem;
+      line-height: .73rem;
+      border-radius: .11rem .11rem 0 0;
+      background: rgba(41,55,87,0.4);
+      transition: 200ms;
+    }
+    .actived{
+      color: $color-blue;
+      font-size: .3rem!important;
+      background: $color-29!important;
+    }
+  }
+  .rankList{
+    padding: 0 .3rem .4rem;
+    background: rgba(41,55,87,1)!important;
+    border-radius: 0 .11rem .11rem .11rem;
+    .rank-item{
+      padding-top: .4rem;
+      line-height: .72rem;
+      height: .72rem;
+      .rank-num{
+        margin-right: .38rem;
+        height: .44rem;
+        width: .44rem;
+        .rank-img{
+          height: .44rem;
+          width: .44rem;
+        }
+      }
+      .user{
+        line-height: .72rem;
+        .head-img{
+          margin-right: .28rem;
+          height: .72rem;
+          width: .72rem;
+          &>img{
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+          }
+        }
+      }
+      .userName{
+        line-height: .72rem;
+        max-width: 2rem;
+      }
+      .inviteMan{
+        white-space: nowrap;
+        width: 1.6rem;
+        .name{
+          width: 1rem;
+          line-height: .72rem;
+        }
+      }
+      .sum{
+        width: 1.7rem;
+      }
+    }
+  }
+  .blank{
+    padding-top: 2rem;
+    padding-bottom: 3.62rem;
+    width: 100%;
+    background: $color-29;
+    border-radius: 0 .16rem .16rem .16rem;
+    .inviteKong{
+      margin-bottom: .64rem;;
+      height: 1.4rem;
+      width: 1.6rem;
+    }
+  }
+  .footBox{
+    position: fixed;
+    bottom: .2rem;
+    left: 0;
+    width: 100%;
+    .floatBtn{
+      width: 4.28rem;
+      height: .8rem;
+      border-radius: .4rem;
+      line-height: .8rem;
+      background: linear-gradient(104deg, rgb(255,186,105), rgb(240,90,55));
+      .iconwenhao{
+        margin-left: .1rem;
+      }
+    }
+  }
+}

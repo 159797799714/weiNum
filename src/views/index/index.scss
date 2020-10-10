@@ -1,0 +1,175 @@
+.content {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  .banner {
+    position: relative;
+    height: 3.36rem;
+    width: 100%;
+    .iconKefu{
+      height: .64rem;
+      width: 1.5rem;
+      position: absolute;
+      right: 0;
+      bottom: .16rem;
+    }
+  }
+  .box{
+    padding: 0 0.3rem 0.3rem;
+    .post{
+      padding: 0.3rem 0 0.4rem;
+      line-height: 0.36rem;
+      .post-left{
+        opacity: 0.6;
+        .iconlaba{
+          margin-right: 0.06rem;
+        }
+      }
+      .post-center{
+        position: relative;
+        margin-left: 0.16rem;
+        padding-left: 0.16rem;
+        box-sizing: border-box;
+        height: 0.36rem;
+        overflow: hidden;
+        .notice-box{
+          transition: 200ms;
+        }
+        .notice{
+          height: .0.36rem;
+        }
+        &:before{
+          position: absolute;
+          content: '';
+          height: .24rem;
+          width: .01rem;
+          background-color: #999;
+          top: 50%;
+          left: 0;
+          transform: translateY(-0.12rem);
+        }
+      }
+      .post-right{
+        &>.iconmore_home{
+          line-height: .28rem;
+        }
+        .newIcon{
+          display: inline-block;
+          line-height: .28rem;
+          padding: 0 0.07rem;
+          border-radius: .14rem;
+          background: rgba(218,65,71,0.24);
+        }
+      }
+    }
+
+    .menu{
+      .menu-item{
+        .menuImg{
+          height: .82rem;
+          width: .82rem;
+          margin: 0 auto .14rem;
+        }
+        .menu-item-name{
+          line-height: .33rem;
+        }
+      }
+    }
+
+    .module-box{
+      .module-item{
+        .module-title{
+          padding: .4rem 0 .2rem;
+          line-height: .36rem;
+          .more{
+            line-height: .36rem;
+            i{
+              display: inline-block;
+              vertical-align: top;
+              line-height: .36rem;
+            }
+          }
+        }
+        .module-banner{
+          z-index: 10;
+          padding: .3rem;
+          background: linear-gradient(127deg,rgba(89,149,255,1) 0%,rgba(131,46,244,1) 98%);
+          border-radius: .16rem;
+          .code-row{
+            margin-bottom: .14rem;
+            line-height: .46rem;
+            .code-btn{
+              padding: 0 .12rem 0 .14rem;
+              line-height: .46rem;
+              height: .46rem;
+              background:linear-gradient(104deg,rgba(255,233,201,1) 0%,rgba(254,212,164,1) 50%,rgba(253,191,127,1) 100%);
+              border-radius: .1rem;
+              .iconerweima {
+                margin-right: .07rem;
+              }
+            }
+          }
+          .module-info{
+            .module-img{
+              margin-right: .2rem;
+              border-radius: .1rem;
+              &>img{
+                height: 1.16rem;
+                width: 1.16rem;
+              }
+            }
+            .module-word{
+              margin-bottom: .2rem;
+              line-height: .34rem;
+            }
+            .grade-info{
+              padding: 0 .1rem 0 .13rem;
+              box-sizing: border-box;
+              line-height: .44rem;
+              background:linear-gradient(104deg,rgba(70,68,241,1) 0%,rgba(99,8,217,1) 100%);
+              border-radius: .08rem;
+              .line{
+                width: .01rem;
+                margin: 0 .15rem;
+              }
+            }
+          }
+        }
+        .game-box{
+          z-index: 1;
+          margin-top: -0.1rem;
+          padding: .5rem .3rem 0;
+          background: #293757;
+          border-radius: 0 0 .16rem .16rem;
+        }
+      }
+    }
+  }
+  // 交流群弹窗
+  .group-main{
+    width: 6.4rem;
+    padding-bottom: .47rem;
+    .group-banner{
+      width: 6.4rem;
+      height: 1.92rem;
+    }
+    .title{
+      box-sizing: border-box;
+      width: 5.8rem;
+      padding: .24rem .1rem;
+      margin: 0 auto;
+      line-height: .36rem;
+      border-bottom: .02rem solid #D6D6D6;
+    }
+    .group-code{
+      height: 4.08rem;
+      width: 4.08rem;
+      margin: .54rem auto .46rem;
+    }
+    .hand-icon{
+      height: 1.28rem;
+      width: 1.28rem;
+      margin: .22rem auto 0;
+    }
+  }
+}

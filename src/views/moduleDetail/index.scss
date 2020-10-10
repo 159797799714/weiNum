@@ -1,0 +1,116 @@
+
+@import '@/common/mixin.scss';
+.content{
+  .timeBox{
+    height: 5.9rem;
+  }
+  .moduleName{
+    padding: .4rem 0 .3rem;
+  }
+  .module-info{
+    margin-bottom: .49rem;
+    .module-img{
+      margin-right: .2rem;
+      height: 1.46rem;
+      width: 1.46rem;
+      &>img{
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .module-detail{
+      .name{
+        margin-bottom: .15rem;
+        line-height: .32rem;
+        height: .65rem;
+      }
+      .code-point{
+        line-height: .46rem;
+      }
+      .code-btn{
+        padding: 0 .12rem 0 .14rem;
+        line-height: .46rem;
+        height: .46rem;
+        background:linear-gradient(104deg,#FF6D6D,#E7252D);
+        border-radius: .1rem;
+        .iconerweima {
+          margin-right: .07rem;
+        }
+      }
+    }
+  }
+  .earning{
+    position: relative;
+    z-index: 10;
+    padding: .3rem .3rem .4rem;
+    .earning-head{
+      margin-bottom: .32rem;
+    }
+    .earning-predict{
+      width: 2.85rem;
+      padding-left: .23rem;
+    }
+    .yestoday{
+      width: 2.2rem;
+    }
+    .earning-predict,.yestoday{
+      .num{
+        font-weight: bold;
+        line-height: .54rem;
+      }
+      .word{
+        line-height: .4rem;
+        white-space: nowrap;
+      }
+    }
+    .setTime{
+      position: relative;
+      right: -0.3rem;
+      width: 1rem;
+      height: .48rem;
+      color: #AF7474;
+      line-height: .24rem;
+      background: #F9EDD1;
+      border-radius: .57rem 0 0 .57rem;
+      padding: 0.08rem .11rem 0.07rem .19rem;
+    }
+  }
+  .tutorial{
+    position: relative;
+    z-index: 1;
+    height: 2.19rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: .17rem;
+    margin-top: -0.1rem;
+    border-radius: 0 0 0.16rem 0.16rem;
+    .tutorial-nav{
+      padding-right: .24rem;
+      line-height: .78rem;
+    }
+    .tutorialImg{
+      height: 1rem;
+      width: 100%;
+    }
+  }
+  .slipe-box{
+    width: 100%;
+    padding: .48rem 0;
+    white-space: nowrap;
+    overflow: scroll;
+    .slipe-item{
+      display: inline-block;
+      vertical-align: top;
+      height: 5.49rem;
+      width: 3.09rem;
+      margin-right: .3rem;
+      border-radius: 0.11rem;
+      background: $color-ff;
+    }
+  }
+  .m-b20{margin-bottom: .2rem;}
+  .game-box{
+    padding: .4rem .3rem 0;
+    margin-bottom: .4rem;
+  }
+}
